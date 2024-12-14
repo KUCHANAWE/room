@@ -1,25 +1,24 @@
 package com.example.room.database
 
-import android.hardware.camera2.CameraExtensionSession.StillCaptureLatency
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class daftarBelanja(
+data class historyBelanja(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "Id")
-    var id: Int = 0,
+    var id : Int =0,
 
     @ColumnInfo(name = "tanggal")
-    var tanggal: String? = null,
+    var tanggal: String?=null,
 
     @ColumnInfo(name = "item")
-    var item: String? = null,
+    var item: String ?= null,
 
-    @ColumnInfo(name = "jumlah")
+    @ColumnInfo(name= "jumlah")
     var jumlah: String? = null,
 
     @ColumnInfo(name = "status")
-    var status: Int = 0,
+    var status: Int = 0
 )
